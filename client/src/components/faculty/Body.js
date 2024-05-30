@@ -17,7 +17,7 @@ const Body = () => {
   const notices = useSelector((state) => state.admin.notices.result);
   const user = JSON.parse(localStorage.getItem("user"));
   const subjects = useSelector((state) => state.admin.subjects.result);
-
+  const students = useSelector((state) => state.admin.allStudent);
   return (
     <div className="flex-[0.8] mt-3">
       <div className="space-y-5">
@@ -34,7 +34,7 @@ const Body = () => {
               />
               <div className="flex flex-col">
                 <h1>Class</h1>
-                <h2 className="text-2xl font-bold">12</h2>
+                <h2 className="text-2xl font-bold">--</h2>
               </div>
             </div>
             <div className="flex items-center space-x-4 border-r-2">
@@ -44,7 +44,7 @@ const Body = () => {
               />
               <div className="flex flex-col">
                 <h1>Student</h1>
-                <h2 className="text-2xl font-bold">10</h2>
+                <h2 className="text-2xl font-bold">{students?.length}</h2>
               </div>
             </div>
             <div className="flex items-center space-x-4 border-r-2">
