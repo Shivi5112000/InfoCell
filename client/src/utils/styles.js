@@ -1,5 +1,5 @@
 export const adminData =
-  "flex flex-col overflow-y-auto scrollbar-thin scrollbar-track-white scrollbar-thumb-black h-[25rem]  shadow-lg pl-5 rounded-md overflow-x-hidden";
+  "flex flex-col overflow-y-auto scrollbar-thin scrollbar-track-white scrollbar-thumb-black h-[22rem]  shadow-lg pl-5 rounded-md overflow-x-hidden";
 
 export const adminDataBody =
   "grid grid-cols-12 hover:scale-105 transition-all duration-150";
